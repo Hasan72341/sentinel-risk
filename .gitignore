@@ -1,0 +1,72 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+reports/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Desktop app (Tauri + React)
+node_modules/
+desktop/node_modules/
+desktop/dist/
+desktop/out/
+desktop/.vite/
+desktop/release/
+desktop/src-tauri/target/
+desktop/src-tauri/gen/schemas/
+desktop/src/main/*.js
+desktop/src/main/*.d.ts
+*.exe
+*.msi
+*.dmg
+
+# API backend
+api/__pycache__/
+api/*.pyc
+api/.venv/
+api/venv/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Automated test artifacts
+desktop/playwright-report/
+desktop/test-results/
+load_tests/results/
+
+# Local environments, credentials and generated caches
+.DS_Store
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+!.env.template
+.ruff_cache/
+.pytest_cache/
+__pycache__/
+*.egg-info/
+node_modules/
+*.log
+/tmp/

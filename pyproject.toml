@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-risk"
+version = "0.6.0"
+description = "Financial statement analysis, ratios, charts and HTML reports"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "openpyxl>=3.1", "matplotlib>=3.7"]
+
+# Note: the name "sentinel-risk" is already taken on PyPI by an unrelated
+# project. Install from source (pip install -e .) and choose a free
+# distribution name before any publication.
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+sentinel = "sentinel_risk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
