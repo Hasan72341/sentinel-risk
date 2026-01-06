@@ -1,0 +1,347 @@
+export interface RatioResult {
+  category: 'profitability' | 'liquidity' | 'leverage' | 'efficiency';
+  ratioName: string;
+  value: number;
+  unit: string;
+  benchmark: number | null;
+  status: 'good' | 'warning' | 'critical';
+}
+
+export interface PCAResult {
+  error?: string;
+  assets: number;
+  observations: number;
+  kaiser_components: number;
+  total_explained_variance_pct: number;
+  scree_plot_data: { component: number; eigenvalue: number; cumulative_var_pct: number }[];
+  recommendation?: string;
+}
+
+export interface FamaFrenchResult {
+  error?: string;
+  assets: number;
+  observations: number;
+  avg_r_squared: number;
+  mean_alpha_pct: number;
+  factor_statistics: { factor: string; mean_annual_pct: number; volatility_annual_pct: number; sharpe: number }[];
+  asset_loadings: { asset: string; beta_mkt: number; beta_smb: number; beta_hml: number; r_squared: number }[];
+  recommendation?: string;
+}
+
+export interface BlackLittermanResult {
+  error?: string;
+  market_weights: number[];
+  optimal_weights: number[];
+  implied_equilibrium_returns: number[];
+  posterior_returns: number[];
+  return_changes: number[];
+  portfolio_metrics: { expected_return: number; volatility: number; sharpe_ratio: number; tracking_error: number; information_ratio: number };
+}
+
+export interface StockRankingResult {
+  error?: string;
+  stocks_analyzed: number;
+  criteria_used: string[];
+  best_stock: string;
+  consistency: { cr: number; consistent: boolean };
+  ahp_weights: number[];
+  ahp_ranking: { name: string; weight_pct: number }[];
+  topsis_ranking: { name: string; closeness: number }[];
+}
+
+export interface AnalysisResult {
+  analysisId: string;
+  companyName: string;
+  period: string;
+  fileName: string;
+  createdAt: string;
+  ratios: RatioResult[];
+}
+
+export interface AnalysisHistoryItem {
+  analysisId: string;
+  companyName: string;
+  period: string;
+  fileName: string;
+  createdAt: string;
+  summary: {
+    profitability: number;
+    liquidity: number;
+    leverage: number;
+    efficiency: number;
+  };
+}
+
+export interface UserPreferences {
+  defaultLanguage: 'en';
+  chartTheme: 'light' | 'dark';
+  decimalPlaces: number;
+  autoSave: boolean;
+}
+
+export interface LicenseInfo {
+  valid: boolean;
+  tier: 'free' | 'pro' | 'enterprise';
+  expiresAt: string | null;
+  features: string[];
+}
+
+export interface ApiResponse<T> {
+  data?: T;
+  error?: {
+    code: string;
+    message: string;
+    details: string | null;
+  };
+}
+
+export interface AIConfig {
+  configured: boolean;
+  model: string;
+  endpoint: string;
+}
+
+export interface ChatMessage {
+  role: 'user' | 'assistant';
+  content: string;
+  sources?: string[];
+  modelUsed?: string;
+}
+
+export type EvidenceSeverity = 'info' | 'warning' | 'blocking';
+export type EvidenceMappingStatus = 'confirmed' | 'suggested' | 'needs_review';
+
+export interface EvidenceMapping {
+  source_column: string;
+  concept_id: string | null;
+  confidence: number;
+  rationale: string;
+  status: EvidenceMappingStatus;
+}
+
+export interface EvidenceLocation {
+  file_name: string;
+  sheet_name: string;
+  column_name: string;
+  row_number: number | null;
+  page_number: number | null;
+  table_index: number | null;
+  cell_reference: string | null;
+}
+
+export interface EvidenceIssue {
+  rule_id: string;
+  severity: EvidenceSeverity;
+  status: 'pass' | 'fail' | 'not_applicable';
+  message: string;
+  remediation: string;
+  evidence_locations?: EvidenceLocation[];
+}
+
+export interface EvidenceManifest {
+  file_name: string;
+  file_hash: string;
+  source_type: string;
+  sheet_name: string;
+  imported_at: string;
+  detected_locale: string | null;
+  row_count: number;
+  column_count: number;
+}
+
+export interface EvidenceReviewResult {
+  kind: 'financial_statement';
+  manifest: EvidenceManifest;
+  mappings: EvidenceMapping[];
+  health: Record<EvidenceSeverity, number>;
+  ready_for_analysis: boolean;
+  issues: EvidenceIssue[];
+}
+
+// Document Intelligence
+export interface DocumentExtractResult {
+  financial_data: Record<string, number>;
+  extraction_method: 'native' | 'ocr' | 'structured' | 'text_parse' | 'failed';
+  confidence: number;
+  fields_found: number;
+  raw_text?: string;
+  filename?: string;
+  document_type?: string;
+  reporting_unit?: { currency: string | null; unit: string | null; multiplier: number | null };
+  quality?: {
+    completeness: number;
+    fields_found: number;
+    critical_found: number;
+    critical_missing: string[];
+    warnings: string[];
+    quality_score: number;
+  };
+}
+
+// Consolidation
+export interface ConsolidatedCompany {
+  company_name: string;
+  ownership_pct: number;
+  financial_data: Record<string, number>;
+}
+
+export interface ConsolidationResult {
+  consolidated_financials: Record<string, number>;
+  eliminations: Record<string, number>;
+  ratios: RatioResult[];
+  contributions: {
+    company_name: string;
+    revenue: number;
+    net_income: number;
+    ownership_pct: number;
+    revenue_contribution: number;
+  }[];
+  company_count: number;
+}
+
+export interface TaxAuditFact {
+  concept_id: string;
+  value: number;
+  period: string;
+  currency: string | null;
+  scale: string | null;
+  locations: EvidenceLocation[];
+}
+
+export interface TaxAuditEvidenceResult {
+  kind: 'tax_audit_pdf';
+  manifest: EvidenceManifest;
+  extraction_mode: string;
+  ready_for_review: boolean;
+  facts: TaxAuditFact[];
+  issues: EvidenceIssue[];
+}
+
+export type EvidenceInspectionResult = EvidenceReviewResult | TaxAuditEvidenceResult;
+
+// Time Series Analysis
+export interface ARIMAResult {
+  method: string;
+  aic: number | null;
+  bic: number | null;
+  historical: { dates: string[]; values: number[] };
+  forecast: { dates: string[]; values: number[]; lower: number[]; upper: number[] };
+  forecast_steps: number;
+  error?: string;
+}
+
+export interface GARCHResult {
+  method: string;
+  parameters: { omega: number; alpha: number; beta: number } | null;
+  persistence: number | null;
+  long_run_volatility: number | null;
+  current_annual_volatility: number;
+  conditional_volatility: number[];
+  forecast_volatility: number[] | null;
+  aic: number | null;
+  error?: string;
+}
+
+export interface DecompositionResult {
+  method: string;
+  period: number;
+  trend: number[];
+  seasonal: number[];
+  residual: number[];
+  observed: number[];
+  error?: string;
+}
+
+export interface TimeSeriesSummary {
+  count: number;
+  first: number;
+  last: number;
+  min: number;
+  max: number;
+  mean: number;
+  std: number;
+  total_return_pct: number;
+  volatility_annual: number;
+  skewness: number;
+  kurtosis: number;
+}
+
+// Financial Engineering
+export interface VaRResult {
+  method: string;
+  confidence: number;
+  position_value: number;
+  var_return_pct: number;
+  var_absolute: number;
+  cvar_return_pct: number;
+  cvar_absolute: number;
+  interpretation: string;
+  error?: string;
+}
+
+export interface MonteCarloResult {
+  parameters: { s0: number; mu_annual: number; sigma_annual: number; days: number; simulations: number };
+  statistics: {
+    mean_final_price: number;
+    median_final_price: number;
+    prob_profit: number;
+    prob_loss: number;
+    var_95_pct: number;
+    expected_return_pct: number;
+  };
+  percentiles: Record<number, number>;
+  sample_paths: number[][];
+}
+
+export interface BlackScholesResult {
+  option_type: string;
+  inputs: { spot: number; strike: number; time: number; rate: number; volatility: number };
+  price: number;
+  d1: number;
+  d2: number;
+  greeks: { delta: number; gamma: number; vega: number; theta: number };
+  error?: string;
+}
+
+export interface PortfolioOptResult {
+  optimal_weights: number[];
+  optimal_return: number;
+  optimal_volatility: number;
+  sharpe_ratio: number;
+  min_var_weights: number[];
+  min_var_return: number;
+  min_var_volatility: number;
+  num_assets: number;
+}
+
+// Backtesting
+export interface BacktestTrade { day: number; action: string; price: number; shares: number; pnl: number; }
+export interface BacktestRisk { sharpe_ratio: number; sortino_ratio: number; max_drawdown_pct: number; max_drawdown_duration_days: number; calmar_ratio: number; var_95_pct: number; cvar_95_pct: number; }
+export interface BacktestBenchmark { total_return_pct: number; cagr_pct: number; volatility_pct: number; sharpe: number; alpha_pct: number; beta: number; tracking_error_pct: number; information_ratio: number; excess_return_pct: number; }
+export interface SingleBacktestResult { strategy_name: string; period: { days: number; years: number }; capital: { initial: number; final: number }; performance: { total_return_pct: number; cagr_pct: number; annual_volatility_pct: number }; risk: BacktestRisk; trades: { total: number; buy_count: number; sell_count: number; win_rate: number; profit_factor: number; expectancy: number; avg_win: number; avg_loss: number; winning_trades: number; losing_trades: number }; benchmark: BacktestBenchmark | null; charts: { equity_curve: number[]; benchmark_curve: number[] | null; drawdown_series: number[] }; trade_log: BacktestTrade[]; error?: string; }
+export interface PortfolioBacktestResult { strategy_name: string; num_assets: number; asset_names: string[]; period: { days: number; years: number }; capital: { initial: number; final: number }; weights: number[]; rebalance_days: number; performance: { total_return_pct: number; cagr_pct: number; annual_volatility_pct: number }; risk: BacktestRisk; assets: { name: string; weight_pct: number; total_return_pct: number; volatility_pct: number }[]; benchmark: { total_return_pct: number; excess_return_pct: number } | null; charts: { equity_curve: number[]; benchmark_curve: number[] | null; drawdown_series: number[] }; error?: string; }
+export interface BacktestDemoResult { demo_info: { description: string; assets: string[]; sectors: string[]; period_days: number }; single_asset: SingleBacktestResult; portfolio: PortfolioBacktestResult; }
+
+// Sentiment Analysis
+export interface SentimentTextResult { text_preview: string; label_name: string; lang: string; weight: number; pos_score: number; neg_score: number; sentiment_score: number; label: string; pos_words: string[]; neg_words: string[]; token_count: number; }
+export interface SentimentOverall { score: number; label: string; positive_pct: number; negative_pct: number; neutral_pct: number; }
+export interface SentimentStockResult { symbol: string; score: number; signal: string; news_count: number; recommendation: string; }
+export interface SentimentDemoResult { demo_info: { description: string; news_count: number; social_count: number; stocks_analyzed: string[] }; market_overall: SentimentOverall; market_distribution: { positive: number; negative: number; neutral: number }; market_keywords: { positive: string[]; negative: string[] }; score_timeline: number[]; per_stock: SentimentStockResult[]; }
+
+// Stochastic Calculus
+export interface StochasticDemoResult { demo_title: string; description: string; gbm_ito_simulation: Record<string, any>; heston_stochastic_volatility: Record<string, any>; option_greeks_surface: Record<string, any>; barrier_option_pricing: Record<string, any>; jump_diffusion_model: Record<string, any>; }
+
+// Network Analysis
+export interface NetworkDemoResult { demo_info: Record<string, any>; correlation_network: Record<string, any>; minimum_spanning_tree: Record<string, any>; contagion_simulation: Record<string, any>; systemic_risk: Record<string, any>; }
+
+// Causal Inference
+export interface CausalDemoResult { summary: Record<string, any>; granger_causality: Record<string, any>; impulse_response: Record<string, any>; transfer_entropy: Record<string, any>; mutual_information: Record<string, any>; causal_discovery: Record<string, any>; }
+
+// Reinforcement Learning
+export interface RLDemoResult { demo_title: string; description: string; daily_price_series_summary: Record<string, any>; intraday_execution_summary: Record<string, any>; asset_names: string[]; q_learning_execution: Record<string, any>; twap_vwap_strategy: Record<string, any>; portfolio_rl_allocation: Record<string, any>; }
+
+// Fuzzy Neural
+export interface FuzzyNeuralDemoResult { demo_title: string; description: string; credit_scoring: Record<string, any>; bankruptcy_prediction: Record<string, any>; rule_extraction: Record<string, any>; }
+
+// Advanced Optimization
+export interface AdvOptDemoResult { demo: Record<string, any>; assets: string[]; sectors: Record<string, any>; expected_returns: number[]; socp_optimization: Record<string, any>; robust_optimization: Record<string, any>; hrp_optimization: Record<string, any>; pareto_frontier: Record<string, any>; }
