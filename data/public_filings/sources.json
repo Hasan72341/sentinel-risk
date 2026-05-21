@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "KO",
+    "cik": "0000021344",
+    "entity_name": "COCA COLA CO",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json",
+    "retrieved_at": "2026-10-03T21:11:31.658984+00:00",
+    "sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40",
+    "cache": "raw/KO.json.gz",
+    "bytes": 5028478
+  },
+  {
+    "ticker": "PEP",
+    "cik": "0000077476",
+    "entity_name": "PepsiCo, Inc.",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077476.json",
+    "retrieved_at": "2026-10-03T21:11:33.848484+00:00",
+    "sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+    "cache": "raw/PEP.json.gz",
+    "bytes": 4932092
+  },
+  {
+    "ticker": "KDP",
+    "cik": "0001418135",
+    "entity_name": "Keurig Dr Pepper Inc.",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001418135.json",
+    "retrieved_at": "2026-10-03T21:11:35.989242+00:00",
+    "sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416",
+    "cache": "raw/KDP.json.gz",
+    "bytes": 5131878
+  }
+]
