@@ -1,0 +1,2530 @@
+{
+  "case_id": "us-beverages-fy2022-2024",
+  "title": "Public filings credit review: beverages",
+  "as_of": "2025-04-01",
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "currency": "USD",
+  "unit": "USD (unscaled)",
+  "data_status": "Historical reported financials; current raw cache filtered to original annual filings at cutoff",
+  "selection_policy": "Earliest 10-K annual revenue accession for each period ending 2022\u20132024, filed by cutoff; exact accession, USD unit and start/end for other facts. Later amendments and restatements are excluded.",
+  "limitations": [
+    "Three US-listed corporations; no Asia, financial institution or fund case is evidenced here.",
+    "Small selected peer set, including a foods business and differing fiscal calendars; medians are not sector benchmarks.",
+    "Research screens and narrative are generated analysis. No agency rating, calibrated PD, lending limit, trade, client exposure or onboarding approval is claimed.",
+    "Standard US-GAAP facts only. Missing concepts remain unavailable. Liabilities may be derived using equity including noncontrolling interests.",
+    "FCF is defined here as operating cash flow less cash capital expenditure; it may differ from issuer non-GAAP measures. No one-off adjustments are applied.",
+    "Annual historical monitoring only; current news, legal agreements, collateral and counterparty limits are outside this dataset.",
+    "A cash ratio below one or a screening alert is not proof of default or a credit recommendation."
+  ],
+  "sources": [
+    {
+      "ticker": "KO",
+      "cik": "0000021344",
+      "entity_name": "COCA COLA CO",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json",
+      "retrieved_at": "2026-10-03T21:11:31.658984+00:00",
+      "sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40",
+      "cache": "raw/KO.json.gz",
+      "bytes": 5028478
+    },
+    {
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "entity_name": "PepsiCo, Inc.",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077476.json",
+      "retrieved_at": "2026-10-03T21:11:33.848484+00:00",
+      "sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+      "cache": "raw/PEP.json.gz",
+      "bytes": 4932092
+    },
+    {
+      "ticker": "KDP",
+      "cik": "0001418135",
+      "entity_name": "Keurig Dr Pepper Inc.",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001418135.json",
+      "retrieved_at": "2026-10-03T21:11:35.989242+00:00",
+      "sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416",
+      "cache": "raw/KDP.json.gz",
+      "bytes": 5131878
+    }
+  ],
+  "issuers": [
+    {
+      "ticker": "KO",
+      "name": "COCA COLA CO",
+      "context": {
+        "profile": "Global beverage company with concentrate and finished-product operations. Bottling arrangements and refranchising affect comparisons with integrated peers.",
+        "event": "The 2024 filing attributes the operating cash flow decline primarily to a $6.0 billion IRS tax litigation deposit, alongside currency, tax and refranchising effects. Reported cash flow is retained without adding the deposit back.",
+        "source": "https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k/content/0000021344-25-000011/ko-20241231.htm",
+        "section": "Business; MD&A \u2014 Liquidity, Capital Resources and Financial Position"
+      },
+      "years": [
+        {
+          "ticker": "KO",
+          "year": 2022,
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "filed": "2023-02-21",
+          "accession": "0000021344-23-000011",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000011/0000021344-23-000011-index.html",
+          "values": {
+            "revenue": 43004000000,
+            "gross_profit": 25004000000,
+            "operating_income": 10909000000,
+            "net_income": 9542000000,
+            "cost_of_goods_sold": 18000000000,
+            "total_assets": 92763000000,
+            "current_assets": 22591000000,
+            "current_liabilities": 19724000000,
+            "total_liabilities": 66937000000,
+            "equity": 24105000000,
+            "consolidated_equity": 25826000000,
+            "cash": 9519000000,
+            "inventory": 4233000000,
+            "accounts_receivable": 3487000000,
+            "operating_cash_flow": 11018000000,
+            "capital_expenditure": 1484000000,
+            "interest_expense": 882000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 43004000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 25004000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 10909000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 9542000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 18000000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 92763000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 22591000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 19724000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_liabilities": {
+              "kind": "derived",
+              "formula": "total_assets - consolidated_equity",
+              "inputs": [
+                "total_assets",
+                "consolidated_equity"
+              ]
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 24105000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 25826000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 9519000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 4233000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 3487000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 11018000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 1484000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "interest_expense": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 882000000,
+              "end": "2022-12-31",
+              "accn": "0000021344-23-000011",
+              "filed": "2023-02-21",
+              "start": "2022-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5814342851827737,
+            "operating_margin": 0.2536740768300623,
+            "net_margin": 0.2218863361547763,
+            "current_ratio": 1.1453559115798013,
+            "cash_ratio": 0.4826100182518759,
+            "quick_ratio": 0.9307442709389576,
+            "liabilities_to_assets": 0.7215915828509212,
+            "cfo_margin": 0.25620872476978884,
+            "fcf_margin": 0.22170030694819087,
+            "cfo_to_liabilities": 0.16460253671362624,
+            "revenue_growth": null
+          },
+          "quality": {
+            "missing_fields": [],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "KO",
+          "year": 2023,
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "filed": "2024-02-20",
+          "accession": "0000021344-24-000009",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/0000021344-24-000009-index.html",
+          "values": {
+            "revenue": 45754000000,
+            "gross_profit": 27234000000,
+            "operating_income": 11311000000,
+            "net_income": 10714000000,
+            "cost_of_goods_sold": 18520000000,
+            "total_assets": 97703000000,
+            "current_assets": 26732000000,
+            "current_liabilities": 23571000000,
+            "total_liabilities": 70223000000,
+            "equity": 25941000000,
+            "consolidated_equity": 27480000000,
+            "cash": 9366000000,
+            "inventory": 4424000000,
+            "accounts_receivable": 3410000000,
+            "operating_cash_flow": 11599000000,
+            "capital_expenditure": 1852000000,
+            "interest_expense": 1527000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 45754000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 27234000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 11311000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 10714000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 18520000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 97703000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 26732000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 23571000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_liabilities": {
+              "kind": "derived",
+              "formula": "total_assets - consolidated_equity",
+              "inputs": [
+                "total_assets",
+                "consolidated_equity"
+              ]
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 25941000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 27480000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 9366000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 4424000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 3410000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 11599000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 1852000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "interest_expense": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 1527000000,
+              "end": "2023-12-31",
+              "accn": "0000021344-24-000009",
+              "filed": "2024-02-20",
+              "start": "2023-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5952266468505486,
+            "operating_margin": 0.24721335839489444,
+            "net_margin": 0.23416531887922368,
+            "current_ratio": 1.1341054685842773,
+            "cash_ratio": 0.39735267913962075,
+            "quick_ratio": 0.9464172075855924,
+            "liabilities_to_assets": 0.7187394450528642,
+            "cfo_margin": 0.25350789002054464,
+            "fcf_margin": 0.2130305547055995,
+            "cfo_to_liabilities": 0.16517380345470858,
+            "revenue_growth": 0.06394753976374301
+          },
+          "quality": {
+            "missing_fields": [],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "KO",
+          "year": 2024,
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "filed": "2025-02-20",
+          "accession": "0000021344-25-000011",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/0000021344-25-000011-index.html",
+          "values": {
+            "revenue": 47061000000,
+            "gross_profit": 28737000000,
+            "operating_income": 9992000000,
+            "net_income": 10631000000,
+            "cost_of_goods_sold": 18324000000,
+            "total_assets": 100549000000,
+            "current_assets": 25997000000,
+            "current_liabilities": 25249000000,
+            "total_liabilities": 74177000000,
+            "equity": 24856000000,
+            "consolidated_equity": 26372000000,
+            "cash": 10828000000,
+            "inventory": 4728000000,
+            "accounts_receivable": 3569000000,
+            "operating_cash_flow": 6805000000,
+            "capital_expenditure": 2064000000,
+            "interest_expense": 1656000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 47061000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 28737000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 9992000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 10631000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 18324000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 100549000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 25997000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 25249000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "total_liabilities": {
+              "kind": "derived",
+              "formula": "total_assets - consolidated_equity",
+              "inputs": [
+                "total_assets",
+                "consolidated_equity"
+              ]
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 24856000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 26372000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 10828000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 4728000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 3569000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": null,
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 6805000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 2064000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            },
+            "interest_expense": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 1656000000,
+              "end": "2024-12-31",
+              "accn": "0000021344-25-000011",
+              "filed": "2025-02-20",
+              "start": "2024-01-01",
+              "source_sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.6106330082233696,
+            "operating_margin": 0.21232018019166612,
+            "net_margin": 0.22589830220352308,
+            "current_ratio": 1.0296249356410154,
+            "cash_ratio": 0.42884866727395143,
+            "quick_ratio": 0.8423699948512813,
+            "liabilities_to_assets": 0.73771991765209,
+            "cfo_margin": 0.144599562270245,
+            "fcf_margin": 0.10074159070143006,
+            "cfo_to_liabilities": 0.09174002723216092,
+            "revenue_growth": 0.028565808453905772
+          },
+          "quality": {
+            "missing_fields": [],
+            "balance_sheet_residual_usd": 0
+          }
+        }
+      ],
+      "monitoring": [
+        {
+          "area": "Liquidity",
+          "rule": "Current ratio below 1.0x",
+          "value": 1.0296249356410154,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Profitability",
+          "rule": "Operating margin falls by more than 2 percentage points",
+          "value": -0.03489317820322832,
+          "status": "review",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Cash flow",
+          "rule": "Operating cash flow falls by more than 20%",
+          "value": -0.41331149237003195,
+          "status": "review",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Free cash flow",
+          "rule": "Operating cash flow less capital expenditure is negative",
+          "value": 4741000000,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        }
+      ],
+      "review": "# COCA COLA CO (KO) \u2014 historical credit review\n\n\nInformation cutoff: 2025-04-01. Fiscal period: 2024-01-01 to 2024-12-31. All amounts USD.\n\n\n## Business and comparability\n\nGlobal beverage company with concentrate and finished-product operations. Bottling arrangements and refranchising affect comparisons with integrated peers.\n\n\n## Reported financial performance\n\nRevenue: $47,061,000,000; annual growth: 2.86%. Operating margin: 21.23%; selected peer median: 16.88% (n=3, including this issuer).\n\nCurrent ratio: 1.03x; liabilities/assets: 73.77%. Operating cash flow margin: 14.46%; free cash flow margin: 10.07%.\n\n\n## Filing context\n\nThe 2024 filing attributes the operating cash flow decline primarily to a $6.0 billion IRS tax litigation deposit, alongside currency, tax and refranchising effects. Reported cash flow is retained without adding the deposit back.\n\nSource: https://investors.coca-colacompany.com/filings-reports/annual-filings-10-k/content/0000021344-25-000011/ko-20241231.htm (Business; MD&A \u2014 Liquidity, Capital Resources and Financial Position).\n\n\n## Monitoring and follow-up\n\n- not_triggered: Current ratio below 1.0x. Illustrative research screen, not a covenant test.\n\n- review: Operating margin falls by more than 2 percentage points. Illustrative research screen, not a covenant test.\n\n- review: Operating cash flow falls by more than 20%. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating cash flow less capital expenditure is negative. Illustrative research screen, not a covenant test.\n\n\nReview liquidity facilities, debt maturity disclosures, recurring cash generation and the cited exceptional items before reaching a lending decision.\n\n\n## Evidence and decision limits\n\nAnnual filing: https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/0000021344-25-000011-index.html; filed 2025-02-20.\n\nEach extracted financial field retains its concept, accession, period, unit and source checksum. This generated review is an analytical draft; no credit rating, calibrated PD or facility approval is assigned.\n"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "context": {
+        "profile": "Global convenient foods and beverages company. Its foods operations make it an imperfect beverage peer; fiscal 2024 ended December 28 rather than December 31.",
+        "event": "Review the foods and beverages mix, geographic performance and demand alongside consolidated margins. The reported interest expense concept is not used for a cross-company gross interest coverage comparison.",
+        "source": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm",
+        "section": "Business; MD&A; Consolidated Financial Statements"
+      },
+      "years": [
+        {
+          "ticker": "PEP",
+          "year": 2022,
+          "period_start": "2021-12-26",
+          "period_end": "2022-12-31",
+          "filed": "2023-02-09",
+          "accession": "0000077476-23-000007",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/0000077476-23-000007-index.html",
+          "values": {
+            "revenue": 86392000000,
+            "gross_profit": 45816000000,
+            "operating_income": 11512000000,
+            "net_income": 8910000000,
+            "cost_of_goods_sold": 40576000000,
+            "total_assets": 92187000000,
+            "current_assets": 21539000000,
+            "current_liabilities": 26785000000,
+            "total_liabilities": 74914000000,
+            "equity": 17149000000,
+            "consolidated_equity": 17273000000,
+            "cash": 4954000000,
+            "inventory": 5222000000,
+            "accounts_receivable": 10163000000,
+            "operating_cash_flow": 10811000000,
+            "capital_expenditure": 5207000000,
+            "interest_expense": null,
+            "net_interest_and_other": 939000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 86392000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 45816000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 11512000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 8910000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 40576000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 92187000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 21539000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 26785000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 74914000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 17149000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 17273000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 4954000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 5222000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsNotesAndLoansReceivableNetCurrent",
+              "unit": "USD",
+              "val": 10163000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 10811000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquireProductiveAssets",
+              "unit": "USD",
+              "val": 5207000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "interest_expense": {
+              "kind": "unavailable",
+              "reason": "The issuer's InterestExpense fact represents net interest expense and other. It is preserved separately as net_interest_and_other; gross interest expense is not sourced here."
+            },
+            "net_interest_and_other": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 939000000,
+              "end": "2022-12-31",
+              "accn": "0000077476-23-000007",
+              "filed": "2023-02-09",
+              "start": "2021-12-26",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+              "issuer_label": "Net interest expense and other"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5303268821187147,
+            "operating_margin": 0.13325307898879526,
+            "net_margin": 0.10313454949532364,
+            "current_ratio": 0.8041441105096135,
+            "cash_ratio": 0.18495426544707858,
+            "quick_ratio": 0.6091842449131977,
+            "liabilities_to_assets": 0.8126308481673121,
+            "cfo_margin": 0.12513890175016204,
+            "fcf_margin": 0.0648671173256783,
+            "cfo_to_liabilities": 0.14431214459246602,
+            "revenue_growth": null
+          },
+          "quality": {
+            "missing_fields": [
+              "interest_expense"
+            ],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "PEP",
+          "year": 2023,
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-30",
+          "filed": "2024-02-09",
+          "accession": "0000077476-24-000008",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/0000077476-24-000008-index.html",
+          "values": {
+            "revenue": 91471000000,
+            "gross_profit": 49590000000,
+            "operating_income": 11986000000,
+            "net_income": 9074000000,
+            "cost_of_goods_sold": 41881000000,
+            "total_assets": 100495000000,
+            "current_assets": 26950000000,
+            "current_liabilities": 31647000000,
+            "total_liabilities": 81858000000,
+            "equity": 18503000000,
+            "consolidated_equity": 18637000000,
+            "cash": 9711000000,
+            "inventory": 5334000000,
+            "accounts_receivable": 10815000000,
+            "operating_cash_flow": 13442000000,
+            "capital_expenditure": 5518000000,
+            "interest_expense": null,
+            "net_interest_and_other": 819000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 91471000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 49590000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 11986000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 9074000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 41881000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 100495000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 26950000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 31647000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 81858000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 18503000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 18637000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 9711000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 5334000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsNotesAndLoansReceivableNetCurrent",
+              "unit": "USD",
+              "val": 10815000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 13442000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquireProductiveAssets",
+              "unit": "USD",
+              "val": 5518000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "interest_expense": {
+              "kind": "unavailable",
+              "reason": "The issuer's InterestExpense fact represents net interest expense and other. It is preserved separately as net_interest_and_other; gross interest expense is not sourced here."
+            },
+            "net_interest_and_other": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 819000000,
+              "end": "2023-12-30",
+              "accn": "0000077476-24-000008",
+              "filed": "2024-02-09",
+              "start": "2023-01-01",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+              "issuer_label": "Net interest expense and other"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5421390386023985,
+            "operating_margin": 0.1310360660755868,
+            "net_margin": 0.09920083961036831,
+            "current_ratio": 0.851581508515815,
+            "cash_ratio": 0.30685373021139445,
+            "quick_ratio": 0.6830347268303473,
+            "liabilities_to_assets": 0.8145479874620628,
+            "cfo_margin": 0.14695367930819603,
+            "fcf_margin": 0.086628548939008,
+            "cfo_to_liabilities": 0.16421119499621295,
+            "revenue_growth": 0.05879016575608853
+          },
+          "quality": {
+            "missing_fields": [
+              "interest_expense"
+            ],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "PEP",
+          "year": 2024,
+          "period_start": "2023-12-31",
+          "period_end": "2024-12-28",
+          "filed": "2025-02-04",
+          "accession": "0000077476-25-000007",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/0000077476-25-000007-index.html",
+          "values": {
+            "revenue": 91854000000,
+            "gross_profit": 50110000000,
+            "operating_income": 12887000000,
+            "net_income": 9578000000,
+            "cost_of_goods_sold": 41744000000,
+            "total_assets": 99467000000,
+            "current_assets": 25826000000,
+            "current_liabilities": 31536000000,
+            "total_liabilities": 81296000000,
+            "equity": 18041000000,
+            "consolidated_equity": 18171000000,
+            "cash": 8505000000,
+            "inventory": 5306000000,
+            "accounts_receivable": 10333000000,
+            "operating_cash_flow": 12507000000,
+            "capital_expenditure": 5318000000,
+            "interest_expense": null,
+            "net_interest_and_other": 919000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Revenues",
+              "unit": "USD",
+              "val": 91854000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 50110000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 12887000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 9578000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 41744000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 99467000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 25826000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 31536000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 81296000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 18041000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 18171000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 8505000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 5306000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsNotesAndLoansReceivableNetCurrent",
+              "unit": "USD",
+              "val": 10333000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": null,
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 12507000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquireProductiveAssets",
+              "unit": "USD",
+              "val": 5318000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be"
+            },
+            "interest_expense": {
+              "kind": "unavailable",
+              "reason": "The issuer's InterestExpense fact represents net interest expense and other. It is preserved separately as net_interest_and_other; gross interest expense is not sourced here."
+            },
+            "net_interest_and_other": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 919000000,
+              "end": "2024-12-28",
+              "accn": "0000077476-25-000007",
+              "filed": "2025-02-04",
+              "start": "2023-12-31",
+              "source_sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+              "issuer_label": "Net interest expense and other"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5455396607659982,
+            "operating_margin": 0.1402987349489407,
+            "net_margin": 0.10427417423302197,
+            "current_ratio": 0.8189370877727042,
+            "cash_ratio": 0.2696917808219178,
+            "quick_ratio": 0.6506849315068494,
+            "liabilities_to_assets": 0.8173162958569173,
+            "cfo_margin": 0.13616173492716702,
+            "fcf_margin": 0.07826550830666057,
+            "cfo_to_liabilities": 0.15384520763629206,
+            "revenue_growth": 0.0041871194148965785
+          },
+          "quality": {
+            "missing_fields": [
+              "interest_expense"
+            ],
+            "balance_sheet_residual_usd": 0
+          }
+        }
+      ],
+      "monitoring": [
+        {
+          "area": "Liquidity",
+          "rule": "Current ratio below 1.0x",
+          "value": 0.8189370877727042,
+          "status": "review",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Profitability",
+          "rule": "Operating margin falls by more than 2 percentage points",
+          "value": 0.009262668873353919,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Cash flow",
+          "rule": "Operating cash flow falls by more than 20%",
+          "value": -0.06955810147299513,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Free cash flow",
+          "rule": "Operating cash flow less capital expenditure is negative",
+          "value": 7189000000,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        }
+      ],
+      "review": "# PepsiCo, Inc. (PEP) \u2014 historical credit review\n\n\nInformation cutoff: 2025-04-01. Fiscal period: 2023-12-31 to 2024-12-28. All amounts USD.\n\n\n## Business and comparability\n\nGlobal convenient foods and beverages company. Its foods operations make it an imperfect beverage peer; fiscal 2024 ended December 28 rather than December 31.\n\n\n## Reported financial performance\n\nRevenue: $91,854,000,000; annual growth: 0.42%. Operating margin: 14.03%; selected peer median: 16.88% (n=3, including this issuer).\n\nCurrent ratio: 0.82x; liabilities/assets: 81.73%. Operating cash flow margin: 13.62%; free cash flow margin: 7.83%.\n\n\n## Filing context\n\nReview the foods and beverages mix, geographic performance and demand alongside consolidated margins. The reported interest expense concept is not used for a cross-company gross interest coverage comparison.\n\nSource: https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm (Business; MD&A; Consolidated Financial Statements).\n\n\n## Monitoring and follow-up\n\n- review: Current ratio below 1.0x. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating margin falls by more than 2 percentage points. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating cash flow falls by more than 20%. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating cash flow less capital expenditure is negative. Illustrative research screen, not a covenant test.\n\n\nReview liquidity facilities, debt maturity disclosures, recurring cash generation and the cited exceptional items before reaching a lending decision.\n\n\n## Evidence and decision limits\n\nAnnual filing: https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/0000077476-25-000007-index.html; filed 2025-02-04.\n\nEach extracted financial field retains its concept, accession, period, unit and source checksum. This generated review is an analytical draft; no credit rating, calibrated PD or facility approval is assigned.\n"
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper Inc.",
+      "context": {
+        "profile": "Beverage and coffee company reporting U.S. Refreshment Beverages, U.S. Coffee and International segments. Coffee mix and geography differ from the other two issuers.",
+        "event": "The 2024 results describe $718 million of goodwill and intangible impairments and a $225 million accrual for GHOST distribution termination payments. These help explain lower GAAP operating income; reported GAAP figures are retained.",
+        "source": "https://investors.keurigdrpepper.com/2025-02-25-Keurig-Dr-Pepper-Reports-Q4-and-Full-Year-2024-Results-and-Provides-2025-Outlook",
+        "section": "2024 Full Year Consolidated Results and Segment Results"
+      },
+      "years": [
+        {
+          "ticker": "KDP",
+          "year": 2022,
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "filed": "2023-02-23",
+          "accession": "0001418135-23-000003",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813523000003/0001418135-23-000003-index.html",
+          "values": {
+            "revenue": 14057000000,
+            "gross_profit": 7323000000,
+            "operating_income": 2605000000,
+            "net_income": 1436000000,
+            "cost_of_goods_sold": 6734000000,
+            "total_assets": 51837000000,
+            "current_assets": 3804000000,
+            "current_liabilities": 8076000000,
+            "total_liabilities": 26712000000,
+            "equity": 25126000000,
+            "consolidated_equity": 25125000000,
+            "cash": 535000000,
+            "inventory": 1314000000,
+            "accounts_receivable": 1484000000,
+            "operating_cash_flow": 2837000000,
+            "capital_expenditure": 353000000,
+            "interest_expense": 693000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "val": 14057000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 7323000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 2605000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 1436000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 6734000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 51837000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 3804000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 8076000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 26712000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 25126000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 25125000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 535000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 1314000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 1484000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 2837000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 353000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "interest_expense": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 693000000,
+              "end": "2022-12-31",
+              "accn": "0001418135-23-000003",
+              "filed": "2023-02-23",
+              "start": "2022-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5209504161627658,
+            "operating_margin": 0.1853169239524792,
+            "net_margin": 0.10215550971046454,
+            "current_ratio": 0.4710252600297177,
+            "cash_ratio": 0.06624566617137197,
+            "quick_ratio": 0.3083209509658247,
+            "liabilities_to_assets": 0.5153075988193762,
+            "cfo_margin": 0.20182115671907236,
+            "fcf_margin": 0.1767091128974888,
+            "cfo_to_liabilities": 0.10620694818808027,
+            "revenue_growth": null
+          },
+          "quality": {
+            "missing_fields": [],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "KDP",
+          "year": 2023,
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "filed": "2024-02-22",
+          "accession": "0001418135-24-000007",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813524000007/0001418135-24-000007-index.html",
+          "values": {
+            "revenue": 14814000000,
+            "gross_profit": 8080000000,
+            "operating_income": 3192000000,
+            "net_income": 2181000000,
+            "cost_of_goods_sold": 6734000000,
+            "total_assets": 52130000000,
+            "current_assets": 3375000000,
+            "current_liabilities": 8916000000,
+            "total_liabilities": 26454000000,
+            "equity": 25676000000,
+            "consolidated_equity": 25676000000,
+            "cash": 267000000,
+            "inventory": 1142000000,
+            "accounts_receivable": 1368000000,
+            "operating_cash_flow": 1329000000,
+            "capital_expenditure": 425000000,
+            "interest_expense": 496000000
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "val": 14814000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 8080000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 3192000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 2181000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 6734000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 52130000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 3375000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 8916000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 26454000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 25676000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 25676000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 267000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 1142000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 1368000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 1329000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 425000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "interest_expense": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InterestExpense",
+              "unit": "USD",
+              "val": 496000000,
+              "end": "2023-12-31",
+              "accn": "0001418135-24-000007",
+              "filed": "2024-02-22",
+              "start": "2023-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5454299986499257,
+            "operating_margin": 0.21547185095180235,
+            "net_margin": 0.14722559740785743,
+            "current_ratio": 0.3785329744279946,
+            "cash_ratio": 0.029946164199192462,
+            "quick_ratio": 0.25044863167339615,
+            "liabilities_to_assets": 0.5074621139459045,
+            "cfo_margin": 0.08971243418388011,
+            "fcf_margin": 0.06102335628459565,
+            "cfo_to_liabilities": 0.050238149240190516,
+            "revenue_growth": 0.05385217329444414
+          },
+          "quality": {
+            "missing_fields": [],
+            "balance_sheet_residual_usd": 0
+          }
+        },
+        {
+          "ticker": "KDP",
+          "year": 2024,
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "filed": "2025-02-25",
+          "accession": "0001418135-25-000013",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813525000013/0001418135-25-000013-index.html",
+          "values": {
+            "revenue": 15351000000,
+            "gross_profit": 8529000000,
+            "operating_income": 2591000000,
+            "net_income": 1441000000,
+            "cost_of_goods_sold": 6822000000,
+            "total_assets": 53430000000,
+            "current_assets": 3997000000,
+            "current_liabilities": 8087000000,
+            "total_liabilities": 29187000000,
+            "equity": 24243000000,
+            "consolidated_equity": 24243000000,
+            "cash": 510000000,
+            "inventory": 1299000000,
+            "accounts_receivable": 1502000000,
+            "operating_cash_flow": 2219000000,
+            "capital_expenditure": 563000000,
+            "interest_expense": null
+          },
+          "evidence": {
+            "revenue": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "val": 15351000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "gross_profit": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "GrossProfit",
+              "unit": "USD",
+              "val": 8529000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "OperatingIncomeLoss",
+              "unit": "USD",
+              "val": 2591000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "net_income": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetIncomeLoss",
+              "unit": "USD",
+              "val": 1441000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cost_of_goods_sold": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CostOfGoodsAndServicesSold",
+              "unit": "USD",
+              "val": 6822000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Assets",
+              "unit": "USD",
+              "val": 53430000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_assets": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AssetsCurrent",
+              "unit": "USD",
+              "val": 3997000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "current_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "LiabilitiesCurrent",
+              "unit": "USD",
+              "val": 8087000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "total_liabilities": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "Liabilities",
+              "unit": "USD",
+              "val": 29187000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquity",
+              "unit": "USD",
+              "val": 24243000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "consolidated_equity": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "unit": "USD",
+              "val": 24243000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "cash": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "CashAndCashEquivalentsAtCarryingValue",
+              "unit": "USD",
+              "val": 510000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "inventory": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "InventoryNet",
+              "unit": "USD",
+              "val": 1299000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "accounts_receivable": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "AccountsReceivableNetCurrent",
+              "unit": "USD",
+              "val": 1502000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": null,
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "operating_cash_flow": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "unit": "USD",
+              "val": 2219000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "capital_expenditure": {
+              "kind": "reported",
+              "taxonomy": "us-gaap",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "unit": "USD",
+              "val": 563000000,
+              "end": "2024-12-31",
+              "accn": "0001418135-25-000013",
+              "filed": "2025-02-25",
+              "start": "2024-01-01",
+              "source_sha256": "ada095aed6af778d3862b9fdfb75376ff216af33de7a7bf7f78f2b0fdd4d4416"
+            },
+            "interest_expense": {
+              "kind": "unavailable",
+              "reason": "No matching standard-taxonomy USD fact in the selected filing; never filled with zero."
+            }
+          },
+          "ratios": {
+            "gross_margin": 0.5555989837795583,
+            "operating_margin": 0.16878379258680215,
+            "net_margin": 0.09387010618200768,
+            "current_ratio": 0.4942500309138123,
+            "cash_ratio": 0.0630641770743168,
+            "quick_ratio": 0.3336218622480524,
+            "liabilities_to_assets": 0.5462661426165076,
+            "cfo_margin": 0.14455084359325127,
+            "fcf_margin": 0.10787570842290405,
+            "cfo_to_liabilities": 0.07602699832117038,
+            "revenue_growth": 0.03624949372215469
+          },
+          "quality": {
+            "missing_fields": [
+              "interest_expense"
+            ],
+            "balance_sheet_residual_usd": 0
+          }
+        }
+      ],
+      "monitoring": [
+        {
+          "area": "Liquidity",
+          "rule": "Current ratio below 1.0x",
+          "value": 0.4942500309138123,
+          "status": "review",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Profitability",
+          "rule": "Operating margin falls by more than 2 percentage points",
+          "value": -0.0466880583650002,
+          "status": "review",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Cash flow",
+          "rule": "Operating cash flow falls by more than 20%",
+          "value": 0.6696764484574869,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        },
+        {
+          "area": "Free cash flow",
+          "rule": "Operating cash flow less capital expenditure is negative",
+          "value": 1656000000,
+          "status": "not_triggered",
+          "basis": "Illustrative screening threshold; not a covenant breach"
+        }
+      ],
+      "review": "# Keurig Dr Pepper Inc. (KDP) \u2014 historical credit review\n\n\nInformation cutoff: 2025-04-01. Fiscal period: 2024-01-01 to 2024-12-31. All amounts USD.\n\n\n## Business and comparability\n\nBeverage and coffee company reporting U.S. Refreshment Beverages, U.S. Coffee and International segments. Coffee mix and geography differ from the other two issuers.\n\n\n## Reported financial performance\n\nRevenue: $15,351,000,000; annual growth: 3.62%. Operating margin: 16.88%; selected peer median: 16.88% (n=3, including this issuer).\n\nCurrent ratio: 0.49x; liabilities/assets: 54.63%. Operating cash flow margin: 14.46%; free cash flow margin: 10.79%.\n\n\n## Filing context\n\nThe 2024 results describe $718 million of goodwill and intangible impairments and a $225 million accrual for GHOST distribution termination payments. These help explain lower GAAP operating income; reported GAAP figures are retained.\n\nSource: https://investors.keurigdrpepper.com/2025-02-25-Keurig-Dr-Pepper-Reports-Q4-and-Full-Year-2024-Results-and-Provides-2025-Outlook (2024 Full Year Consolidated Results and Segment Results).\n\n\n## Monitoring and follow-up\n\n- review: Current ratio below 1.0x. Illustrative research screen, not a covenant test.\n\n- review: Operating margin falls by more than 2 percentage points. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating cash flow falls by more than 20%. Illustrative research screen, not a covenant test.\n\n- not_triggered: Operating cash flow less capital expenditure is negative. Illustrative research screen, not a covenant test.\n\n\nReview liquidity facilities, debt maturity disclosures, recurring cash generation and the cited exceptional items before reaching a lending decision.\n\n\n## Evidence and decision limits\n\nAnnual filing: https://www.sec.gov/Archives/edgar/data/1418135/000141813525000013/0001418135-25-000013-index.html; filed 2025-02-25.\n\nEach extracted financial field retains its concept, accession, period, unit and source checksum. This generated review is an analytical draft; no credit rating, calibrated PD or facility approval is assigned.\n"
+    }
+  ],
+  "peer_metrics": {
+    "gross_margin": {
+      "label": "Gross margin",
+      "formula": "gross_profit / revenue",
+      "unit": "%",
+      "median": 0.5555989837795583,
+      "n": 3
+    },
+    "operating_margin": {
+      "label": "Operating margin",
+      "formula": "operating_income / revenue",
+      "unit": "%",
+      "median": 0.16878379258680215,
+      "n": 3
+    },
+    "net_margin": {
+      "label": "Net margin",
+      "formula": "net_income / revenue",
+      "unit": "%",
+      "median": 0.10427417423302197,
+      "n": 3
+    },
+    "current_ratio": {
+      "label": "Current ratio",
+      "formula": "current_assets / current_liabilities",
+      "unit": "x",
+      "median": 0.8189370877727042,
+      "n": 3
+    },
+    "cash_ratio": {
+      "label": "Cash ratio",
+      "formula": "cash / current_liabilities",
+      "unit": "x",
+      "median": 0.2696917808219178,
+      "n": 3
+    },
+    "quick_ratio": {
+      "label": "Quick ratio (CA less inventories)",
+      "formula": "(current_assets - inventory) / current_liabilities",
+      "unit": "x",
+      "median": 0.6506849315068494,
+      "n": 3
+    },
+    "liabilities_to_assets": {
+      "label": "Liabilities / assets",
+      "formula": "total_liabilities / total_assets",
+      "unit": "%",
+      "median": 0.73771991765209,
+      "n": 3
+    },
+    "cfo_margin": {
+      "label": "Operating cash flow margin",
+      "formula": "operating_cash_flow / revenue",
+      "unit": "%",
+      "median": 0.14455084359325127,
+      "n": 3
+    },
+    "fcf_margin": {
+      "label": "Free cash flow margin",
+      "formula": "(operating_cash_flow - capital_expenditure) / revenue",
+      "unit": "%",
+      "median": 0.10074159070143006,
+      "n": 3
+    },
+    "cfo_to_liabilities": {
+      "label": "Operating cash flow / liabilities",
+      "formula": "operating_cash_flow / total_liabilities",
+      "unit": "%",
+      "median": 0.09174002723216092,
+      "n": 3
+    },
+    "revenue_growth": {
+      "label": "Revenue growth",
+      "formula": "revenue / prior_year_revenue - 1",
+      "unit": "%",
+      "median": 0.028565808453905772,
+      "n": 3
+    }
+  }
+}
