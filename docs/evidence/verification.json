@@ -1,0 +1,66 @@
+{
+  "verified_date_local": "2026-10-04",
+  "study_cutoff": "2025-04-01",
+  "commands": [
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -m sentinel_risk.public_filings",
+      "result": "3 issuers; 9 annual rows; 149 reported facts; 3 derived facts; 4 missing gross-interest inputs; 5 research alerts"
+    },
+    {
+      "command": "PYTHONPATH=api:src .venv/bin/python -m pytest tests/test_public_filings.py -q",
+      "result": "20 passed; 1 dependency warning"
+    },
+    {
+      "command": "PYTHONPATH=api:src .venv/bin/python -m pytest tests -q",
+      "result": "292 passed; 15 subtests passed; 2 dependency warnings; 6.28s"
+    },
+    {
+      "cwd": "desktop",
+      "command": "npm run build",
+      "result": "Passed tsc and Vite; 2507 modules transformed; large-chunk advisory"
+    },
+    {
+      "cwd": "desktop",
+      "command": "npx playwright test e2e/public-filings.spec.ts",
+      "result": "Passed against real local API as part of the 17-test Chromium suite"
+    },
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -m sentinel_risk.cli data/public_filings/outputs/KO_statements.csv --output data/public_filings/outputs/KO_cli",
+      "result": "Created ratios.csv, dashboard.png, report.html for 3 fiscal rows"
+    },
+    {
+      "cwd": "desktop",
+      "command": "npx playwright test",
+      "result": "17 passed; 7.7s; settings, history, navigation, statement review and public filings covered"
+    }
+  ],
+  "limitations": [
+    "Historical US corporate case only",
+    "No calibrated rating, PD, actual client exposure or onboarding approval",
+    "Excel formula guards inspected; Excel/LibreOffice not executed",
+    "Native Tauri not exercised",
+    "Optional ruff unavailable in existing venv"
+  ],
+  "artifacts": {
+    "data/public_filings/outputs/case_study.json": {
+      "bytes": 107516,
+      "sha256": "1046fb142a52aa05bf772dc6ddb16900e70a36e06f285e7cc1528cff7048d7bd"
+    },
+    "data/public_filings/outputs/ratios.csv": {
+      "bytes": 2241,
+      "sha256": "9ebdb27e563219dab2a918044ea706b6bdcf161798c930cdf631667c1f4df204"
+    },
+    "data/public_filings/outputs/credit_case.xlsx": {
+      "bytes": 16285,
+      "sha256": "7dc255bf58d934ea92d9d16c4b80ead17322359d6500c14d991ddf9db47ee0d4"
+    },
+    "src/sentinel_risk/public_filings.py": {
+      "bytes": 25864,
+      "sha256": "de2133123cda7dc01747fe135a087a575ea18b625f981f30926b4aec1623df42"
+    },
+    "docs/evidence/public-filings.png": {
+      "bytes": 129857,
+      "sha256": "3d37ba7f64975ec05fe182e901e863140d1c207f7d1bd9f3239b22922ed7fa61"
+    }
+  }
+}
