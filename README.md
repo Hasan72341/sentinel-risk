@@ -6,9 +6,17 @@ FastAPI, and Tauri provides an optional desktop shell.
 
 ## Contributors
 
-Shared project: [Hasan (@Hasan72341)](https://github.com/Hasan72341), [Gopesh (@CodeCrusherG)](https://github.com/CodeCrusherG), [Prateek (@PrateekIITMandi)](https://github.com/PrateekIITMandi), [Manav (@manav-bidawat)](https://github.com/manav-bidawat), [Abhay (@immortal-coder-abhay)](https://github.com/immortal-coder-abhay).
+Sentinel Risk is a shared project built by all five contributors. **Hasan coordinates
+integration and delivery.** The table summarises each contributor's primary areas of
+work; responsibility for the overall project is shared.
 
-Hasan coordinates integration and delivery. All five contributors share responsibility for the project.
+| Contributor | Primary responsibility | Contributions |
+|---|---|---|
+| [Hasan (@Hasan72341)](https://github.com/Hasan72341) | Integration and delivery | Connected the API, CLI and React application; built the dashboard and shared interface; packaged the Tauri desktop shell; maintained CI, architecture documentation and verification evidence. |
+| [Gopesh (@CodeCrusherG)](https://github.com/CodeCrusherG) | Data ingestion, persistence and evidence | Implemented statement ingestion, database models and migrations, evidence intake and field validation, and counterparty monitoring; prepared the SEC filings cache with source checksums. |
+| [Prateek (@PrateekIITMandi)](https://github.com/PrateekIITMandi) | Financial analysis and public filings | Implemented financial ratios, credit scorecards and peer benchmarks; developed the public-filings analysis pipeline and its tests; prepared issuer statements and credit-review outputs. |
+| [Manav (@manav-bidawat)](https://github.com/manav-bidawat) | Exposure analytics and model diagnostics | Implemented netting, collateral and potential-exposure models; developed VaR/ES diagnostics, backtest exception monitoring and portfolio optimisation; added financial reports and load-test scenarios. |
+| [Abhay (@immortal-coder-abhay)](https://github.com/immortal-coder-abhay) | Margin, stress testing and evidence exports | Implemented initial-margin and sensitivity scenarios, stress and reverse-stress analysis; prepared financial-review evidence and Excel exports; added dashboard, settings and API-wiring checks. |
 
 ## Public filings study
 
